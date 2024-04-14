@@ -1,0 +1,61 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: kofoos.c16mgeqgsinu.ap-northeast-2.rds.amazonaws.com    Database: kofoos
+-- ------------------------------------------------------
+-- Server version	8.0.33
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
+SET @@SESSION.SQL_LOG_BIN= 0;
+
+--
+-- GTID state at the beginning of the backup 
+--
+
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '';
+
+--
+-- Table structure for table `user_dislikes_material`
+--
+
+DROP TABLE IF EXISTS `user_dislikes_material`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_dislikes_material` (
+  `user_dislikes_material_id` int NOT NULL AUTO_INCREMENT,
+  `material_id` int DEFAULT NULL,
+  `user_id` int DEFAULT NULL,
+  PRIMARY KEY (`user_dislikes_material_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1169 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_dislikes_material`
+--
+
+LOCK TABLES `user_dislikes_material` WRITE;
+/*!40000 ALTER TABLE `user_dislikes_material` DISABLE KEYS */;
+INSERT INTO `user_dislikes_material` VALUES (602,0,14),(603,1,14),(604,4,14),(605,5,14),(606,8,14),(607,10,14),(608,12,14),(609,2,14),(610,1,34),(611,4,34),(613,4,35),(614,3,35),(615,7,35),(616,5,14),(617,7,14),(618,9,14),(629,6,36),(630,4,36),(631,2,36),(632,2,14),(645,2,14),(646,20,37),(647,3,14),(648,4,14),(649,5,14),(650,2,38),(651,4,38),(661,1,39),(662,2,39),(666,6,40),(667,4,40),(677,7,41),(678,8,41),(679,10,41),(733,1,43),(734,2,43),(735,4,43),(736,5,43),(737,10,43),(738,11,43),(744,8,45),(751,3,44),(752,4,44),(753,5,44),(754,3,46),(755,4,46),(756,7,46),(757,10,47),(758,9,47),(766,7,49),(787,5,51),(788,4,51),(789,7,51),(790,8,51),(987,8,53),(991,8,57),(997,0,52),(998,6,52),(999,7,52),(1000,8,52),(1001,10,52),(1002,1,52),(1003,2,52),(1004,5,52),(1005,4,52),(1006,3,52),(1007,14,58),(1058,0,59),(1059,2,59),(1060,3,59),(1061,1,59),(1062,4,59),(1063,5,59),(1064,6,59),(1065,7,59),(1066,8,59),(1067,1,32),(1068,3,32),(1069,10,32),(1070,11,32),(1071,14,32),(1072,7,32),(1077,2,61),(1078,4,61),(1079,7,61),(1080,4,62),(1081,0,63),(1082,3,63),(1083,2,63),(1084,4,50),(1085,6,50),(1086,11,50),(1161,3,69),(1162,16,69),(1163,0,70),(1166,0,71),(1167,3,71),(1168,2,71);
+/*!40000 ALTER TABLE `user_dislikes_material` ENABLE KEYS */;
+UNLOCK TABLES;
+SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-02-16 11:10:34
